@@ -1,0 +1,32 @@
+
+version: 2
+
+models:
+  - name: base_listings
+    description: "base_listings"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: nome
+      - name: id_hospede
+      - name: nome_hospede
+      - name: bairro
+      - name: tipo
+      - name: preco
+      - name: minimo_noites
+
+  - name: base_reviews
+    columns:
+      - name: id_listing
+      - name: id
+      - name: reviewer_id
+      - name: reviewer_name
+      - name: comentarios
+
+  - name: base_calendar
+    columns:
+      - name: id
+      - name: preco

@@ -1,0 +1,13 @@
+danilo_freitas_ada_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: database-ada-1009.clzgkgrmzmzh.us-east-1.rds.amazonaws.com
+      user: postgres
+      password: ada_postgres_1009
+      port: 5432
+      dbname: postgres
+      schema: spec
+      threads: 4
+      keepalives_idle: 0

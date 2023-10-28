@@ -1,0 +1,19 @@
+
+version: 2
+
+models:
+  - name: big_table_danilo_freitas
+    description: "big_table_danilo_freitas"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: nome
+      - name: nome_hospede
+      - name: bairro
+      - name: tipo
+      - name: minimo_noites
+      - name: reviewer_name
+      - name: comentarios
